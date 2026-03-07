@@ -1,6 +1,7 @@
 datasource db {
-  provider = "sqlite"
-  url      = "file:./data.db"
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 generator client {
@@ -9,7 +10,7 @@ generator client {
 
 model Vote {
   id        String   @id @default(uuid())
-  type      String   // yes, no, abstain
+  type      String
   country   String?
   createdAt DateTime @default(now())
   ip        String?
