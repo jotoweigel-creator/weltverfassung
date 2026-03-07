@@ -1,0 +1,30 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./data.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Vote {
+  id        String   @id @default(uuid())
+  type      String   // yes, no, abstain
+  country   String?
+  createdAt DateTime @default(now())
+  ip        String?
+}
+
+model Visitor {
+  id        String   @id @default(uuid())
+  ip        String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  name      String
+  country   String?
+  content   String
+  createdAt DateTime @default(now())
+}

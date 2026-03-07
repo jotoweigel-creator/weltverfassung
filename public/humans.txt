@@ -1,0 +1,13 @@
+/* TEAM */
+Creator: Johannes Weigel
+Email: joto.weigel@gmail.com
+Location: Halle (Saale), Germany
+
+/* SITE */
+Last update: 2025/03/07
+Language: 20 languages (German, English, Spanish, French, Italian, Portuguese, Russian, Chinese, Japanese, Korean, Arabic, Hindi, Bengali, Turkish, Polish, Ukrainian, Indonesian, Persian, Swahili, Vietnamese)
+Standards: HTML5, CSS3, JavaScript, React, Next.js
+Components: shadcn/ui, Tailwind CSS
+
+/* MISSION */
+A constitution for humanity - promoting peace, human rights, and global solidarity.

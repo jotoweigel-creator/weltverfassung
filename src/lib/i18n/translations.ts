@@ -1,0 +1,61 @@
+export type Language = 'de' | 'en' | 'es' | 'fr' | 'it' | 'pt' | 'ru' | 'zh' | 'ja' | 'ko' | 'ar' | 'hi' | 'bn' | 'tr' | 'pl' | 'uk' | 'id' | 'fa' | 'sw' | 'vi'
+
+export const languageNames: Record<Language, string> = {
+  de: 'Deutsch',
+  en: 'English',
+  es: 'Español',
+  fr: 'Français',
+  it: 'Italiano',
+  pt: 'Português',
+  ru: 'Русский',
+  zh: '中文',
+  ja: '日本語',
+  ko: '한국어',
+  ar: 'العربية',
+  hi: 'हिन्दी',
+  bn: 'বাংলা',
+  tr: 'Türkçe',
+  pl: 'Polski',
+  uk: 'Українська',
+  id: 'Bahasa Indonesia',
+  fa: 'فارسی',
+  sw: 'Kiswahili',
+  vi: 'Tiếng Việt'
+}
+
+export const defaultTranslations = {
+  siteName: 'Weltverfassung',
+  tagline: 'Eine Verfassung für die Menschheit',
+  vote: 'Abstimmen',
+  yes: 'Ja',
+  no: 'Nein',
+  abstain: 'Enthaltung',
+  visitors: 'Besucher',
+  countries: 'Länder',
+  comments: 'Kommentare',
+  languages: 'Sprachen',
+  share: 'Teilen',
+  download: 'Herunterladen',
+  donate: 'Spenden',
+  learnMore: 'Mehr erfahren',
+  participate: 'Mitmachen',
+  privacy: 'Datenschutz',
+  imprint: 'Impressum',
+  acceptCookies: 'Cookies akzeptieren',
+  cookieNotice: 'Wir nutzen Cookies, um Ihre Erfahrung zu verbessern.',
+  newsletter: 'Newsletter abonnieren',
+  yourEmail: 'Ihre E-Mail',
+  subscribe: 'Anmelden',
+  readConstitution: 'Verfassung lesen',
+  supportMission: 'Die Mission unterstützen',
+  spreadWord: 'Weitersagen',
+  joinDiscussion: 'Diskutieren',
+  helpTranslate: 'Übersetzen',
+  becomeAdvocate: 'Fürsprechen',
+  educateOthers: 'Bildung',
+  donateNow: 'Spenden',
+  getInvolved: 'Engagieren',
+  organize: 'Organisieren'
+}
+
+export type Translations = typeof defaultTranslations

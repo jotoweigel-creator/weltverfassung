@@ -1,0 +1,40 @@
+{
+  "name": "Weltverfassung - World Constitution",
+  "short_name": "Weltverfassung",
+  "description": "Eine Verfassung für die Menschheit - A Constitution for Humanity",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e3a8a",
+  "theme_color": "#3b82f6",
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["government", "education", "social"],
+  "lang_alternates": {
+    "de": "/?lang=de",
+    "en": "/?lang=en",
+    "es": "/?lang=es",
+    "fr": "/?lang=fr",
+    "it": "/?lang=it",
+    "pt": "/?lang=pt",
+    "ru": "/?lang=ru",
+    "zh": "/?lang=zh",
+    "ja": "/?lang=ja",
+    "ko": "/?lang=ko",
+    "ar": "/?lang=ar",
+    "hi": "/?lang=hi",
+    "bn": "/?lang=bn",
+    "tr": "/?lang=tr",
+    "pl": "/?lang=pl",
+    "uk": "/?lang=uk",
+    "id": "/?lang=id",
+    "fa": "/?lang=fa",
+    "sw": "/?lang=sw",
+    "vi": "/?lang=vi"
+  }
+}

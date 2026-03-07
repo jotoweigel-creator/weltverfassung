@@ -1,0 +1,19 @@
+# Robots.txt for Weltverfassung Website
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://worldcodex.space.z.ai/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block common bot paths
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

@@ -1,0 +1,17 @@
+<svg width="1344" height="768" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <!-- Globe -->
+  <circle cx="672" cy="350" r="180" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <ellipse cx="672" cy="350" rx="180" ry="60" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <ellipse cx="672" cy="350" rx="60" ry="180" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Title -->
+  <text x="672" y="600" text-anchor="middle" fill="white" font-size="72" font-family="Arial, sans-serif" font-weight="bold">WELTVERFASSUNG</text>
+  <text x="672" y="680" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="36" font-family="Arial, sans-serif">World Constitution</text>
+</svg>
