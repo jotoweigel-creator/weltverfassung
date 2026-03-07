@@ -226,7 +226,7 @@ export default function Home() {
       setTimeout(() => updates.forEach(u => u()), 0)
     }
     
-    // Fetch votes (real data only, no fallback to mock data)
+    // Fetch votes + check server-side voted cookie
     fetch('/api/vote')
       .then(r => r.json())
       .then(data => {
@@ -236,6 +236,16 @@ export default function Home() {
       .catch(() => {
         setVotes({ yes: 0, no: 0, abstain: 0 })
       })
+
+    // Check server-side cookie via HEAD request
+    fetch('/api/vote', { method: 'HEAD' })
+      .then(r => {
+        if (r.headers.get('x-voted') === '1') {
+          setVoted(true)
+          localStorage.setItem('hasVoted', 'true')
+        }
+      })
+      .catch(() => {})
     
     // Fetch visitors (real data only)
     fetch('/api/visitors')
@@ -271,8 +281,11 @@ export default function Home() {
       const data = await res.json()
       setVotes({ yes: data.yes || 0, no: data.no || 0, abstain: data.abstain || 0 })
       if (data.votesByCountry) setVotesByCountry(data.votesByCountry)
-      setVoted(true)
-      localStorage.setItem('hasVoted', 'true')
+      // Mark as voted if success OR if server says already voted
+      if (!data.error || data.alreadyVoted) {
+        setVoted(true)
+        localStorage.setItem('hasVoted', 'true')
+      }
     } catch {
       // Error - don't set mock data
       console.error('Vote failed')
